@@ -7,11 +7,17 @@ Version 1.0 is brand new and has the most basic features. It allows the input of
 <h2>What this library is.</h2>
 1. A way to watermark your images
 2. A way to create stickers for images (sort of like you see on Facebook)<br>
-3. A work in progress<br>4. A personal project
+3. A work in progress
+4. A personal project
 5. Totally free
+
 <h2>What this library isn't.</h2>
-1. A fully-featured financially supported library<br>2. A professional library (at least not yet)
+
+1. A fully-featured financially supported library
+2. A professional library (at least not yet)
+
 <h2>How to use the library.</h2>
+
 1. Create variables in JavaScript that contain your images and the canvas. For an example of the HTML, see below<br>
   The HTML for the images and canvas
   `<img id="firstImage" src="someImage.jpg" />`<br>
@@ -23,7 +29,7 @@ Version 1.0 is brand new and has the most basic features. It allows the input of
 		`var canvasFromPage = document.getElementById('imagecanvas');`<br>
     `var overlayTest = new OverlayImages(image, otherImage, canvasFromPage);`<br>
 	  `overlayTest.overlay();`<br><br>
-<h4>So simply create a new OverlayImages object with the three variables and call overlayTest.overlay() to fill your canvas with the new image.</h4><br>
+So simply create a new OverlayImages object with the three variables and call overlayTest.overlay() to fill your canvas with the new image.
 <h2>Can I see this in action?</h2><br>
 To see an example of this library in action, please visit repealthe9th.com and see the menu.
 </body>
