@@ -38,5 +38,7 @@ Version 1.0 is brand new and has the most basic features. It allows the input of
 So simply create a new OverlayImages object with the three variables and call overlayTest.overlay() to fill your canvas with the new image.
 <h2>Can I see this in action?</h2><br>
 To see an example of this library in action, please visit <a href="http://www.repealthe9th.com">repealthe9th.com</a> and see the menu.
+
+Alternatively, there is a folder (basic_example) that contains a working HTML page, a version of Overlay.js and a test script that will allow you to see what it does and may also aid you in writing your own code.
 </body>
 </html>
