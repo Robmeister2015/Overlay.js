@@ -6,10 +6,11 @@ A JavaScript libary to add a watermark or sticker to your images. Currently unde
 Version 1.0 is brand new and has the most basic features. It allows the input of two images and then scales the second image to fit into the bottom corner of the other. This is the only feature currently implemented and more are in development.
 <h2>What this library is.</h2>
 1. A way to watermark your images
-2. A way to create stickers for images (sort of like you see on Facebook)<br>
-3. A work in progress
-4. A personal project
-5. Totally free
+2. Written in pure JavaScript (no external libraries necessary)
+3. A way to create stickers for images (sort of like you see on Facebook)<br>
+4. A work in progress
+5. A personal project
+6. Totally free
 
 <h2>What this library isn't.</h2>
 
