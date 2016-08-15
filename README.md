@@ -31,6 +31,6 @@ Version 1.0 is brand new and has the most basic features. It allows the input of
 	  `overlayTest.overlay();`<br><br>
 So simply create a new OverlayImages object with the three variables and call overlayTest.overlay() to fill your canvas with the new image.
 <h2>Can I see this in action?</h2><br>
-To see an example of this library in action, please visit repealthe9th.com and see the menu.
+To see an example of this library in action, please visit <a href="http://www.repealthe9th.com">repealthe9th.com</a> and see the menu.
 </body>
 </html>
