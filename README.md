@@ -33,20 +33,20 @@ Version 1.0 has the most basic features. It allows the input of two images and t
 
 `var image = document.getElementById('firstImage');`<br>
 		`var otherImage = document.getElementById('secondImage');`<br>
-		`var canvasFromPage = document.getElementById('imagecanvas');`<br>
+		`var canvasFromPage = document.getElementById('imagecanvas');`<br><br>
    `var overlayTest = new OverlayImages({`<br>
-			`images: {`<br>
-				`firstImage: image,`<br>
-				`secondImage: otherImage,`<br>
-				`canvas: canvasFromPage`<br>
-			`},`<br>
-		`},`<br>
-		`{`<br>
-			`position: {`<br>
-				`xAxis: '20',`<br>
-				`yAxis: '50'`<br>
-			`}`<br>
-		`});`<br>
+			`	images: {`<br>
+				`		firstImage: image,`<br>
+				`		secondImage: otherImage,`<br>
+				`		canvas: canvasFromPage`<br>
+			`		},`<br>
+		`	},`<br>
+		`	{`<br>
+			`		position: {`<br>
+				`			xAxis: '20',`<br>
+				`			yAxis: '50'`<br>
+			`		}`<br>
+		`	});`<br>
 	  `overlayTest.overlay();`<br><br>
 	  
 So simply create a new OverlayImages object with the three variables and call overlayTest.overlay() to fill your canvas with the new image.
