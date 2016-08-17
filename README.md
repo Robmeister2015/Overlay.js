@@ -29,7 +29,7 @@ Version 1.0 has the most basic features. It allows the input of two images and t
    `<img id="secondImage" src="someOtherImage.png" />`<br>
    `<canvas id="imagecanvas"></canvas>`<br><br>
    
-2. The JavaScript for creating JavaScript variables and then creating your Overlay.js image
+2. The JavaScript for creating JavaScript variables and then creating your Overlay.js image:
 
 `var image = document.getElementById('firstImage');`<br>
 		`var otherImage = document.getElementById('secondImage');`<br>
@@ -41,6 +41,7 @@ Version 1.0 has the most basic features. It allows the input of two images and t
 				`		canvas: canvasFromPage`<br>
 			`		},`<br>
 		`	},`<br>
+		The following can be added directly after the previous section, where the numbers indicate a percentage position on the x and y axes of the background image. This is entirely optional, and the default position (if you choose not to use this section) will sit the image in the bottom right corner of your background image.<br><br>
 		`	{`<br>
 			`		position: {`<br>
 				`			xAxis: '20',`<br>
@@ -49,7 +50,7 @@ Version 1.0 has the most basic features. It allows the input of two images and t
 		`	});`<br>
 	  `overlayTest.overlay();`<br><br>
 	  
-So simply create a new OverlayImages object with the three variables and call overlayTest.overlay() to fill your canvas with the new image.
+So simply create a new OverlayImages object with the three variables and call overlayTest.overlay() to fill your canvas with the new image. Position data is entirely optional, as stated.
 <h2>Can I see this in action?</h2><br>
 To see an example of this library in action, please visit <a href="http://www.repealthe9th.com">repealthe9th.com</a> and see the menu.
 
