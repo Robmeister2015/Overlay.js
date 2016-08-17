@@ -2,8 +2,10 @@
 A JavaScript libary to add a watermark or sticker to your images. Currently under development. All suggestions/criticisms welcome
 <html>
 <body>
-<h2>Current Version (1.0)</h2>
-Version 1.0 is brand new and has the most basic features. It allows the input of two images and then scales the second image to fit into the bottom corner of the other. This is the only feature currently implemented and more are in development.
+<h2>Current Version (1.1)</h2>
+Version 1.1 allows the user to specify the positioning on the background image by way of percentages. The syntax for Overlay creation has also changed to accomodate future change. See the how to section for information on how to use it.
+<h2>Version 1.0</h2>
+Version 1.0 has the most basic features. It allows the input of two images and then scales the second image to fit into the bottom corner of the other. This is the only feature currently implemented and more are in development. This version, along with its readme can be found in the older_versions folder.
 <h2>What this library is.</h2>
 1. A way to watermark your images
 2. Written in pure JavaScript (no external libraries necessary)
@@ -32,7 +34,19 @@ Version 1.0 is brand new and has the most basic features. It allows the input of
 `var image = document.getElementById('firstImage');`<br>
 		`var otherImage = document.getElementById('secondImage');`<br>
 		`var canvasFromPage = document.getElementById('imagecanvas');`<br>
-    `var overlayTest = new OverlayImages(image, otherImage, canvasFromPage);`<br>
+   `var overlayTest = new OverlayImages({`
+			`images: {`
+				`firstImage: image,`
+				`secondImage: otherImage,`
+				`canvas: canvasFromPage`
+			`},`
+		`},`
+		`{`
+			`position: {`
+				`xAxis: '20',`
+				`yAxis: '50'`
+			`}`
+		`});`
 	  `overlayTest.overlay();`<br><br>
 	  
 So simply create a new OverlayImages object with the three variables and call overlayTest.overlay() to fill your canvas with the new image.
