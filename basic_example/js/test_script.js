@@ -16,6 +16,12 @@ window.onload = function(){
 				xAxis: '20',
 				yAxis: '50'
 			}
+		},
+		{
+			dimensions: {
+				width: '100',
+				height: '50'
+			}
 		});
 		
 		overlayTest.overlay();
