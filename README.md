@@ -2,7 +2,9 @@
 A JavaScript libary to add a watermark or sticker to your images. Currently under development. All suggestions/criticisms welcome
 <html>
 <body>
-<h2>Current Version (1.1)</h2>
+<h2>Current Version (2.0)</h2>
+Version 2.0 allows the user to specify the height and width of the image to be overlaid. If one variable is set and the other isn't, then the image is automatically resized based on the variable present. It is best to use only one (height or width) as unless you know the exact dimensions, the image will become skewed.
+<h2>Version 1.1</h2>
 Version 1.1 allows the user to specify the positioning on the background image by way of percentages. The syntax for Overlay creation has also changed to accomodate future change. See the how to section for information on how to use it.
 <h2>Version 1.0</h2>
 Version 1.0 has the most basic features. It allows the input of two images and then scales the second image to fit into the bottom corner of the other. This is the only feature currently implemented and more are in development. This version, along with its readme can be found in the older_versions folder.
@@ -46,6 +48,13 @@ Version 1.0 has the most basic features. It allows the input of two images and t
 			`		position: {`<br>
 				`			xAxis: '20',`<br>
 				`			yAxis: '50'`<br>
+			`		},`<br>
+	  <br><br>
+	  The following can be added after the position section, where the numbers indicate a percentage for height and width of the image to be overlaid on to the background image. This is optional and will sit the image in the bottom right corner at 35% of it's current height and width. If only one of these variables is set, the other is automatically set and prevents any stretching or skewing. If the user sets both, the image may appear stretched or squeezed if the user doesn't know the exact dimensions required.<br><br>
+		`	{`<br>
+			`		dimensions: {`<br>
+				`			height: '100',`<br>
+				`			width: '100'`<br>
 			`		}`<br>
 		`	});`<br>
 	  `overlayTest.overlay();`<br><br>
