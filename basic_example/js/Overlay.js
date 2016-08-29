@@ -1,4 +1,4 @@
-function OverlayImages(image, position) {
+function OverlayImages(image, position, dimensions) {
     this.image = image,
 	this.position = position || {
 		position: {
